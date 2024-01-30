@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 2rem 7%;
+    content: "";
+    background: url(../Pictures/background3.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;    
+    position: relative;
+}
+
+.heading::before{
+    content: '';
+    position: absolute;
+    top: 50%; left:0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 12px;
+    background: #000000;
+    z-index: -1;
+}
+
+.heading span {
+    font-size: 5rem;
+    font-family:'Archivo Black', sans-serif;
+    -webkit-text-stroke: 3px #C6BBDB;
+    color: rgba(198,187,219);
+    font-weight: 500; 
+    padding:.5rem 2rem;
+    background-color: transparent;
+}
+
+li, a {
+    font-family: 'Courier Prime', monospace;
+    font-weight: 500;   
+    font-size: 20px;
+    color: #F4F1F8;
+    text-decoration: none;
+}
+
+button {
+    color: #0e0e0e;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 500;   
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header1st {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #0e0e0e;
+    box-shadow: 0 .2rem 2rem rgb(31, 31, 31);
+}
+
+.nav_links {
+    display: inline-block ;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color:#C6BBDB;
+}
+
+header button{
+   padding: 9px 25px;
+   background-color: rgba(198,187,219,1);
+   border: none;
+   border-radius: 50px ;
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+    background-color: #F4F1F8;
+}
+
+.novel {
+    font-family: 'Courier Prime', monospace;
+    font-weight: 500;  
+    font-size: 35px;
+    color:#C6BBDB;
+    text-decoration: none;
+}
+
+.nest {
+    font-family: 'Courier Prime', monospace;
+    font-weight: 500;   
+    font-size: 35px;
+    color:#F4F1F8;
+    text-decoration: none;
+}
+
+li::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: rgba(198,187,219);
+    display: block;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+li:hover::after {
+    opacity: 1;
+}
+
+.container {
+    min-height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container .content {
+    position: relative;
+}
+
+.container .content h3 {
+    font-size: 5rem;
+    font-family:'Archivo Black', sans-serif;
+    -webkit-text-stroke: 3px #C6BBDB;
+    color: rgba(198,187,219);
+    text-align: center;
+    line-height: 5rem;
+    font-weight: 500; 
+    padding-top: 2rem;
+    padding-right:0;
+    padding-bottom:2rem;
+    padding-left: 2rem;
+    background-color: transparent;
+   
+}
+
+.container .content h3 span {
+    -webkit-text-stroke: 3px #F4F1F8;
+    color: #F4F1F8
+}
+
+.container .content p {
+    font-size: 2rem;
+    font-family:'Courier Prime', monospace;
+    color: #F4F1F8;
+    font-weight: lighter;
+    padding: 3rem 15rem;
+    text-align: justify;
+    word-break: break-all;
+    width: 1000px;
+}
+
+
+.container .frontPage {
+    width: 900px;
+    display: flex;
+    margin-left: -20%;
+    position: relative;
+    max-width: 900px;
+}
+
+.containerAbout {
+    min-height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.containerAbout .contentAbout {
+    position: relative;
+}
+
+.containerAbout .contentAbout h3 {
+    font-size: 5rem;
+    font-family:'Archivo Black', sans-serif;
+    -webkit-text-stroke: 3px #C6BBDB;
+    color: rgba(198,187,219);
+    text-align: center;
+    line-height: 5rem;
+    font-weight: 500; 
+}
+
+.containerAbout .contentAbout h3 span {
+    -webkit-text-stroke: 3px #F4F1F8;
+    color: #F4F1F8;
+}
+
+.containerAbout .contentAbout p span{
+    -webkit-text-stroke: 1px #C6BBDB;
+    font-weight: 900;
+    color: #C6BBDB;
+}
+
+.containerAbout .contentAbout p {
+    font-size: 2rem;
+    font-family:'Courier Prime', monospace;
+    color: #F4F1F8;
+    font-weight: lighter;
+    padding: 3rem 10rem;
+    text-align: justify;
+    word-break: break-all;
+    width: 900px;
+
+}
+
+.containerAbout .aboutPage {
+    width: 900px;
+    display: flex;
+    margin-left: -5%;
+    max-width: 900px;
+}
+
+.container { 
+    width: 55rem;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    left: 100px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.containerAbout {   
+    width: 85rem;
+    height: 200px;
+    display: flex;
+}
+
+.wrapper {
+    margin: 0;  
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    min-height: 80vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bookContainer {
+    width: 350px;
+    height: 435px;
+    background: radial-gradient(#111 50%, #000 100%);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+
+.bookContainer img {
+    transform: scale(1.3);
+    transition: all 0.3s ease-out;
+}
+
+.bookContainer:hover img {
+    transform: scale(1.1) translateY(-20px);
+    opacity: 0.3;
+}
+
+.description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: #F4F1F8;
+    font-size: 18px;
+}
+
+.description h2 {
+    font-family:'Archivo Black', sans-serif;
+    -webkit-text-stroke: 1px #F4F1F8;
+    font-weight: 700;
+    font-size: 29px;
+    margin: 0 0 20px;
+    transform: translateY(-90px);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.description p {
+    font-size: 1rem;
+    font-family:'Courier Prime', monospace;
+    color: #F4F1F8;
+    font-weight: 500;
+    transform: translateY(-90px);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.description a {
+    padding: 9px 25px;
+    background-color: rgba(198,187,219,1);
+    border: none;
+    border-radius: 50px ;
+    display: inline-block;
+    text-decoration: none;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.description a:hover {
+    background: rgb(156 147 173);
+}
+
+.bookContainer:hover .description h2 {
+    opacity: 1;
+}
+
+.bookContainer:hover .description p {  
+    opacity: 1;
+}
+
+.bookContainer:hover .description a {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

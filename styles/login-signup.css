@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../Pictures/background5.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.loginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.box {
+    background: #0e0e0e;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(120, 119, 119, 0.75);
+}
+
+form {
+    font-family: 'Courier Prime', monospace;
+    font-weight: 500;   
+    font-size: 16px;
+    color: #F4F1F8;
+    font-style: none;
+}
+
+.form-box {
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.form-box header {
+    text-align: center;
+    font-size: 30px;
+    font-family:'Archivo Black', sans-serif;
+    -webkit-text-stroke: 1px #C6BBDB;
+    color: rgba(198,187,219);
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #353535;
+    margin-bottom: 10px;
+}
+
+.form-box form .field {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.form-box form .input input {
+    font-family: 'Courier Prime', monospace;
+    font-weight: 500;   
+    font-size: 16px;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #F4F1F8;
+    outline: none;
+    margin-top: 10px;
+}
+
+.btn {
+    height: 35px;
+    background: #C6BBDB;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 500;   
+    font-size: 16px;
+    color: #0e0e0e;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.btn:hover {
+    opacity: 0.80;
+}
+
+.submit {
+    width: 100%;
+}
+
+.links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.href {
+    color: #C6BBDB;
+    font-family: 'Courier Prime', monospace;
+    text-decoration: none;
+}
+
+.message{
+    font-family: 'Courier Prime', monospace;
+    font-weight: 500;   
+    font-size: 16px;
+    text-align: center;
+    background: #353535;
+    padding: 15px 0px;
+    border:1px solid #F4F1F8;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #F4F1F8;
+}
+
+
+
